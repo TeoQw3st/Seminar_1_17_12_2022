@@ -2,13 +2,8 @@
 Console.WriteLine("Введите число N");
 int number = Convert.ToInt32(Console.ReadLine());
 int n = 1;
-int sum = 0;
-while (n<number) 
+while (n<=number) 
 {
-    if (n % 2 == 0)
-    sum = sum +n;
-    else
-    n = n + 1;
-n = n +1;    
+    if (n % 2 == 0) Console.WriteLine($"четные числа от 1 до {number}: {n};"); 
+    n = n + 1; 
 }
-Console.Write(sum);
